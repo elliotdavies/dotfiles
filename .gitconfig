@@ -1,0 +1,15 @@
+[user]
+        name = Elliot Davies
+        email = elliot.a.davies@gmail.com
+[push]
+        default = simple
+[core]
+        editor = vim
+[alias]
+        ch = checkout
+        c = commit
+        cam = commit -am
+        d = diff
+        ps = push
+        pl = pull
+        s = status
