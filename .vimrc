@@ -1,42 +1,44 @@
-" Enable filetype plugins
 filetype plugin on
 filetype indent on
 
-" Always show numbers
-set number
-
-" Set to auto read when a file is changed from the outside
-set autoread
-
-" Enable syntax highlighting
 syntax enable
 
-" Use spaces instead of tabs
+set autoindent
+set autoread
 set expandtab
-
-" Be smart when using tabs ;)
-set smarttab
-
-" 1 tab == 2 spaces
+set hlsearch
+set ignorecase
+set incsearch
+set linebreak
+set nocompatible
+set number
 set shiftwidth=2
+set smartcase
+set smartindent
+set smarttab
 set tabstop=2
+set textwidth=500
+set timeoutlen=1000
+set ttimeoutlen=0
+set wrap
 
-" Linebreak on 500 characters
-set lbr
-set tw=500
+nnoremap <C-a> :Buffers<CR>
+nnoremap <C-f> :Files<CR>
+nnoremap <C-g> :GFiles<CR>
 
-set ai "Auto indent
-set si "Smart indent
-set wrap "Wrap lines
-set hls "Highlight search results
+nnoremap <C-l> <C-w>l
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
 
-set timeoutlen=1000 ttimeoutlen=0
 
 " --- Plugins ---
 call plug#begin('~/.vim/plugged')
 
 Plug 'elmcast/elm-vim'
 Plug 'godlygeek/tabular'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 Plug 'sbdchd/neoformat'
 
 call plug#end()
