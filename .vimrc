@@ -22,9 +22,14 @@ set timeoutlen=1000
 set ttimeoutlen=0
 set wrap
 
-nnoremap <C-a> :Buffers<CR>
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 2
+let g:netrw_winsize = 20
+
+nnoremap <C-@> :Buffers<CR> " Ctrl-Space
 nnoremap <C-f> :Files<CR>
 nnoremap <C-g> :GFiles<CR>
+nnoremap <C-e> :Ag<CR>
 
 nnoremap <C-l> <C-w>l
 nnoremap <C-h> <C-w>h
@@ -40,6 +45,7 @@ Plug 'godlygeek/tabular'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'sbdchd/neoformat'
+Plug 'purescript-contrib/purescript-vim'
 
 call plug#end()
 
