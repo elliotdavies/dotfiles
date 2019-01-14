@@ -20,6 +20,7 @@ set tabstop=2
 set textwidth=500
 set timeoutlen=1000
 set ttimeoutlen=0
+set wildignore+=node_modules/*,bower_components/*
 set wrap
 
 let g:netrw_liststyle = 3
