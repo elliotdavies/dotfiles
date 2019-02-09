@@ -16,6 +16,7 @@ set shiftwidth=2
 set smartcase
 set smartindent
 set smarttab
+set splitright
 set tabstop=2
 set textwidth=500
 set timeoutlen=1000
@@ -28,9 +29,8 @@ let g:netrw_browse_split = 2
 let g:netrw_winsize = 20
 
 nnoremap <C-@> :Buffers<CR> " Ctrl-Space
-nnoremap <C-f> :Files<CR>
+nnoremap <C-f> :Ag<CR>
 nnoremap <C-g> :GFiles<CR>
-nnoremap <C-e> :Ag<CR>
 
 nnoremap <C-l> <C-w>l
 nnoremap <C-h> <C-w>h
