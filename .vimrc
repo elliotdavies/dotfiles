@@ -5,6 +5,7 @@ syntax enable
 
 set autoindent
 set autoread
+set cursorline
 set expandtab
 set hlsearch
 set ignorecase
