@@ -33,7 +33,7 @@ fi
 
 ## Set prompt
 
-export PS1="\w \u$ ";
+export PS1="\w\$(__git_ps1) \u$ ";
 
 
 ## Custom commands 
@@ -70,11 +70,6 @@ alias la='ls -A'
 alias l='ls -CF'
 
 
-### To be run in habito/engine
-alias stack-build-tmux="stack build --fast && ./dev-scripts/tmux/run-backend";
-alias stack-watch="stack test --fast --exec './dev-scripts/hlint.hs -m' --exec './dev-scripts/weeder.hs' --file-watch";
-
-
 ## Language support
 
 export NVM_DIR="$HOME/.nvm"
@@ -100,3 +95,6 @@ export PKG_CONFIG_PATH=/usr/local/opt/openssl/lib/pkgconfig
 
 # fzf
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# Hook to direnv
+eval "$(direnv hook bash)"

@@ -39,6 +39,7 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 
+
 " --- Plugins ---
 call plug#begin('~/.vim/plugged')
 
@@ -48,6 +49,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'sbdchd/neoformat'
 Plug 'purescript-contrib/purescript-vim'
+Plug 'vmchale/dhall-vim'
 
 call plug#end()
 
