@@ -2,6 +2,7 @@ filetype plugin on
 filetype indent on
 
 syntax enable
+autocmd BufRead *.svelte set syntax=html
 
 set autoindent
 set autoread
@@ -37,7 +38,6 @@ nnoremap <C-l> <C-w>l
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
-
 
 " --- Plugins ---
 call plug#begin('~/.vim/plugged')

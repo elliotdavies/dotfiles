@@ -83,6 +83,7 @@ export NVM_DIR="$HOME/.nvm"
 
 export PATH=~/.yarn/bin:$PATH
 export PATH=~/.local/bin:$PATH
+export PATH="$HOME/.cargo/bin:$PATH"
 
 
 ## Other
