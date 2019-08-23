@@ -34,14 +34,10 @@ nnoremap <C-@> :Buffers<CR> " Ctrl-Space
 nnoremap <C-f> :Ag<CR>
 nnoremap <C-g> :GFiles<CR>
 
-nnoremap <C-l> <C-w>l
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'christoomey/vim-tmux-navigator'
 Plug 'godlygeek/tabular'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
