@@ -26,10 +26,6 @@ set ttimeoutlen=0
 set wildignore+=node_modules/*,bower_components/*
 set wrap
 
-let g:netrw_liststyle = 3
-let g:netrw_browse_split = 2
-let g:netrw_winsize = 20
-
 nnoremap <C-@> :Buffers<CR> " Ctrl-Space
 nnoremap <C-f> :Ag<CR>
 nnoremap <C-g> :GFiles<CR>
