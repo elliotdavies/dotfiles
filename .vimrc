@@ -33,7 +33,7 @@ highlight ColorColumn ctermbg=0
 nnoremap <C-@> :Buffers<CR> " Ctrl-Space
 nnoremap <C-f> :Ag<CR>
 nnoremap <C-g> :GFiles<CR>
-
+nnoremap <esc><esc> :noh<CR>
 
 call plug#begin('~/.vim/plugged')
 
