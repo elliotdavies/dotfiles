@@ -6,6 +6,7 @@ autocmd BufRead *.svelte set syntax=html
 
 set autoindent
 set autoread
+set colorcolumn=80
 set cursorline
 set expandtab
 set hlsearch
@@ -26,6 +27,8 @@ set ttimeoutlen=0
 set wildignore+=node_modules/*,bower_components/*
 set wrap
 
+highlight ColorColumn ctermbg=0
+
 nnoremap <C-@> :Buffers<CR> " Ctrl-Space
 nnoremap <C-f> :Ag<CR>
 nnoremap <C-g> :GFiles<CR>
@@ -36,7 +39,6 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 
 
-" --- Plugins ---
 call plug#begin('~/.vim/plugged')
 
 Plug 'godlygeek/tabular'
