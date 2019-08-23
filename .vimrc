@@ -39,21 +39,12 @@ nnoremap <C-k> <C-w>k
 " --- Plugins ---
 call plug#begin('~/.vim/plugged')
 
-Plug 'elmcast/elm-vim'
 Plug 'godlygeek/tabular'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'purescript-contrib/purescript-vim'
 Plug 'sbdchd/neoformat'
+Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-commentary'
 Plug 'vmchale/dhall-vim'
 
 call plug#end()
-
-" Make Elm work with YouCompleteMe
-let g:ycm_semantic_triggers = {
-     \ 'elm' : ['.'],
-     \}
-
-let g:elm_format_autosave = 1
-
