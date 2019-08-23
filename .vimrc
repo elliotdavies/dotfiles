@@ -19,6 +19,7 @@ set shiftwidth=2
 set smartcase
 set smartindent
 set smarttab
+set splitbelow
 set splitright
 set tabstop=2
 set textwidth=500
