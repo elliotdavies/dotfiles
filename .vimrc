@@ -43,8 +43,9 @@ Plug 'elmcast/elm-vim'
 Plug 'godlygeek/tabular'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'sbdchd/neoformat'
 Plug 'purescript-contrib/purescript-vim'
+Plug 'sbdchd/neoformat'
+Plug 'tpope/vim-commentary'
 Plug 'vmchale/dhall-vim'
 
 call plug#end()
