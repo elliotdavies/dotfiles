@@ -35,6 +35,9 @@ nnoremap <C-f> :Ag<CR>
 nnoremap <C-g> :GFiles<CR>
 nnoremap <esc><esc> :noh<CR>
 
+" By default Netrw refreshes on <C-l>, which interferes with navigation
+nnoremap <unique> <C-p> <Plug>NetrwRefresh
+
 call plug#begin('~/.vim/plugged')
 
 Plug 'christoomey/vim-tmux-navigator'
