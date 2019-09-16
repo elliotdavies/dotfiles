@@ -38,8 +38,11 @@ nnoremap <esc><esc> :noh<CR>
 " By default Netrw refreshes on <C-l>, which interferes with navigation
 nnoremap <unique> <C-p> <Plug>NetrwRefresh
 
+let vim_markdown_preview_github=1
+
 call plug#begin('~/.vim/plugged')
 
+Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'godlygeek/tabular'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -47,6 +50,5 @@ Plug 'junegunn/fzf.vim'
 Plug 'sbdchd/neoformat'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-commentary'
-Plug 'vmchale/dhall-vim'
 
 call plug#end()
