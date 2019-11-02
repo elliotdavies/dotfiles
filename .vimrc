@@ -28,7 +28,7 @@ set ttimeoutlen=0
 set wildignore+=node_modules/*,bower_components/*
 set wrap
 
-highlight ColorColumn ctermbg=0
+highlight ColorColumn ctermbg=8
 
 nnoremap <C-@> :Buffers<CR> " Ctrl-Space
 nnoremap <C-f> :Ag<CR>
