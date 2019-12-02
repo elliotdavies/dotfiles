@@ -5,7 +5,7 @@ if [ -f /etc/profile ]; then
 fi
 
 # oh-my-zsh config
-export ZSH="/Users/elliot/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="robbyrussell"
 
