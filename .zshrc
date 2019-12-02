@@ -60,11 +60,10 @@ export PATH=~/.yarn/bin:$PATH
 export PATH=~/.local/bin:$PATH
 export PATH="$HOME/.cargo/bin:$PATH"
 
-if [ -e /Users/elliot/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/elliot/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
-export NIX_IGNORE_SYMLINK_STORE=1
+if [ -e $HOME/.nix-profile/etc/profile.d/nix.sh ]; then . $HOME/.nix-profile/etc/profile.d/nix.sh; fi
 
 # Put openssl and libssl on the path
 export PKG_CONFIG_PATH=/usr/local/opt/openssl/lib/pkgconfig
 
 # Hook to direnv
-# eval "$(direnv hook bash)"
+eval "$(direnv hook zsh)"
