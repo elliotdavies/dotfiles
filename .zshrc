@@ -17,6 +17,11 @@ function precmd () {
   echo -ne "$window_title"
 }
 
+# Run `ls` on `cd`
+chpwd() {
+  ls
+}
+
 ## OMZ plugins
 plugins=(git)
 
