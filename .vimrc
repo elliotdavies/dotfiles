@@ -6,7 +6,7 @@ autocmd BufRead *.svelte set syntax=html
 
 set autoindent
 set autoread
-set colorcolumn=80
+set colorcolumn=81
 set cursorline
 set expandtab
 set hlsearch
@@ -31,7 +31,7 @@ set wrap
 highlight ColorColumn ctermbg=8
 
 nnoremap <C-@> :Buffers<CR> " Ctrl-Space
-nnoremap <C-f> :Ag<CR>
+nnoremap <C-f> :Files<CR>
 nnoremap <C-g> :GFiles<CR>
 nnoremap <esc><esc> :noh<CR>
 
