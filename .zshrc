@@ -67,3 +67,6 @@ export PKG_CONFIG_PATH=/usr/local/opt/openssl/lib/pkgconfig
 
 # Hook to direnv
 eval "$(direnv hook zsh)"
+
+# fzf command completion
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
