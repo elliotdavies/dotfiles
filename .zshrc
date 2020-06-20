@@ -37,6 +37,7 @@ export EDITOR='vim'
 
 # Shortcuts and commands
 alias cdc="cd ~/Code";
+alias cdm='cd "$MONOREPO"';
 
 alias o="open";
 
