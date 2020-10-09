@@ -50,5 +50,6 @@ Plug 'junegunn/fzf.vim'
 Plug 'sbdchd/neoformat'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
 
 call plug#end()
