@@ -31,7 +31,7 @@ set wrap
 
 highlight ColorColumn ctermbg=8
 
-nnoremap <C-@> :Buffers<CR> " Ctrl-Space
+nnoremap <C-@> :Buffers<CR>
 nnoremap <C-f> :Files<CR>
 nnoremap <C-g> :GFiles<CR>
 nnoremap <esc><esc> :noh<CR>
