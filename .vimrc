@@ -6,6 +6,7 @@ autocmd BufRead *.svelte set syntax=html
 
 set autoindent
 set autoread
+set backspace=indent,eol,start
 set colorcolumn=81
 set cursorline
 set expandtab
