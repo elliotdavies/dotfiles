@@ -1,8 +1,8 @@
-# Prevent tmux loading /etc/profile twice
-if [ -f /etc/profile ]; then
-    PATH=""
-    source /etc/profile
-fi
+## Prevent tmux loading /etc/profile twice
+# if [ -f /etc/profile ]; then
+#     PATH=""
+#     source /etc/profile
+# fi
 
 # oh-my-zsh config
 export ZSH="$HOME/.oh-my-zsh"
