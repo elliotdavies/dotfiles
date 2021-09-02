@@ -46,10 +46,12 @@ alias gcam="git commit -am";
 alias gch="git checkout";
 alias gd="git diff";
 alias gps="git push";
+alias gpsf="git push --force-with-lease";
 alias gpl="git pull";
 alias gs="git status";
 
 alias gcl='git remote prune origin && git branch -r | awk "{print \$1}" | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk "{print \$1}" | xargs git branch -d'
+alias gpsu='git push -u origin $(git symbolic-ref HEAD -q --short)'
 
 # Language support
 
