@@ -52,6 +52,13 @@ nnoremap <unique> <C-p> <Plug>NetrwRefresh
 
 let vim_markdown_preview_github=1
 
+" By default clang-format is enabled for JS/JSX/TS/TSX files and will be run if
+" Prettier fails, which is never what we want.
+let g:neoformat_enabled_javascript = ['prettier']
+let g:neoformat_enabled_javascriptreact = ['prettier']
+let g:neoformat_enabled_typescript = ['prettier']
+let g:neoformat_enabled_typescriptreact = ['prettier']
+
 call plug#begin('~/.vim/plugged')
 
 Plug 'JamshedVesuna/vim-markdown-preview'
