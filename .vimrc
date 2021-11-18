@@ -19,6 +19,7 @@ set linebreak
 set nocompatible
 set number
 set shiftwidth=2
+set signcolumn=number
 set smartcase
 set smartindent
 set smarttab
@@ -32,6 +33,7 @@ set wildignore+=node_modules/*,bower_components/*
 set wrap
 
 highlight ColorColumn ctermbg=8
+highlight CocInfoFloat ctermfg=0
 
 " :Ggrep but relative to the cwd
 function! GgrepCwd()
@@ -46,6 +48,11 @@ nnoremap <C-@> :Buffers<CR>
 nnoremap <C-f> :GFiles<CR>
 nnoremap <C-g> :call GgrepCwd()<CR>
 nnoremap <esc><esc> :noh<CR>
+
+" Show docs / definitioms via Coc
+nnoremap <silent> K :call CocAction('doHover')<CR>
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gr <Plug>(coc-references)
 
 " By default Netrw refreshes on <C-l>, which interferes with navigation
 nnoremap <unique> <C-p> <Plug>NetrwRefresh
@@ -71,5 +78,11 @@ Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
+
+" TS language server
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+let g:coc_global_extensions = [
+  \ 'coc-tsserver'
+  \ ]
 
 call plug#end()
