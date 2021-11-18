@@ -3,6 +3,8 @@ filetype indent on
 
 syntax enable
 autocmd BufRead *.svelte set syntax=html
+" Use new regex engine to avoid slow syntax highlighting
+set re=0
 
 set autoindent
 set autoread
