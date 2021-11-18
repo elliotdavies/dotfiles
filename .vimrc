@@ -33,9 +33,18 @@ set wrap
 
 highlight ColorColumn ctermbg=8
 
+" :Ggrep but relative to the cwd
+function! GgrepCwd()
+  call inputsave()
+  let query = input(":Ggrep ")
+  call inputrestore()
+  echo "\n"
+  execute ":Ggrep ".query." ."
+endfunction
+
 nnoremap <C-@> :Buffers<CR>
-nnoremap <C-f> :Files<CR>
-nnoremap <C-g> :GFiles<CR>
+nnoremap <C-f> :GFiles<CR>
+nnoremap <C-g> :call GgrepCwd()<CR>
 nnoremap <esc><esc> :noh<CR>
 
 " By default Netrw refreshes on <C-l>, which interferes with navigation
