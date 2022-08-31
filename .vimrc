@@ -26,9 +26,11 @@ set smarttab
 set splitbelow
 set splitright
 set tabstop=2
-set textwidth=500
+set textwidth=80
 set timeoutlen=1000
 set ttimeoutlen=0
+set undodir=~/.vim/undodir
+set undofile
 set wildignore+=node_modules/*,bower_components/*
 set wrap
 
