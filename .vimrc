@@ -35,7 +35,8 @@ set wildignore+=node_modules/*,bower_components/*
 set wrap
 
 highlight ColorColumn ctermbg=8
-highlight CocInfoFloat ctermfg=0
+highlight PmenuSel ctermbg=40
+highlight link CocMenuSel PmenuSel
 
 " :Ggrep but relative to the cwd
 function! GgrepCwd()
@@ -55,6 +56,8 @@ nnoremap <esc><esc> :noh<CR>
 nnoremap <silent> K :call CocAction('doHover')<CR>
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gr <Plug>(coc-references)
+" Use <tab> for Coc trigger completion
+inoremap <silent><expr> <Tab> coc#pum#visible() ? coc#pum#confirm() : "\<Tab>"
 
 " By default Netrw refreshes on <C-l>, which interferes with navigation
 nnoremap <unique> <C-p> <Plug>NetrwRefresh
@@ -67,6 +70,13 @@ let g:neoformat_enabled_javascript = ['prettier']
 let g:neoformat_enabled_javascriptreact = ['prettier']
 let g:neoformat_enabled_typescript = ['prettier']
 let g:neoformat_enabled_typescriptreact = ['prettier']
+
+let g:neoformat_typescriptreact_prettier = {
+      \ 'exe': 'yarn',
+      \ 'args': ['exec', 'prettier', '--stdin-filepath', '"%:p"', '--parser', 'typescript'],
+      \ 'stdin': 1,
+      \ }
+
 
 call plug#begin('~/.vim/plugged')
 
