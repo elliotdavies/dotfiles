@@ -1,5 +1,5 @@
 [user]
-        name = Elliot Davies
+        name = elliotdavies
         email = elliot.a.davies@gmail.com
 [push]
         default = simple
@@ -16,3 +16,5 @@
         s = status
 [credential]
 	helper = cache --timeout=2628000
+[init]
+	defaultBranch = main

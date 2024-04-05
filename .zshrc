@@ -71,5 +71,33 @@ export PKG_CONFIG_PATH=/usr/local/opt/openssl/lib/pkgconfig
 # Hook to direnv
 eval "$(direnv hook zsh)"
 
+# Hook to nodenv
+eval "$(nodenv init -)"
+
 # fzf command completion
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/elliot/Desktop/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/elliot/Desktop/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/elliot/Desktop/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/elliot/Desktop/google-cloud-sdk/completion.zsh.inc'; fi
+
+# GPG for signed commits
+if [ -r ~/.zshrc ]; then echo -e '\nexport GPG_TTY=$(tty)' >> ~/.zshrc; else echo -e '\nexport GPG_TTY=$(tty)' >> ~/.zprofile; fi
+
+export GPG_TTY=$(tty)
+
+export GPG_TTY=$(tty)
+
+export GPG_TTY=$(tty)
+
+export GPG_TTY=$(tty)
+
+export GPG_TTY=$(tty)
+
+export GPG_TTY=$(tty)
+
+export GPG_TTY=$(tty)
+
+export GPG_TTY=$(tty)

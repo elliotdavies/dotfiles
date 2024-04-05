@@ -15,6 +15,7 @@ set expandtab
 set hlsearch
 set ignorecase
 set incsearch
+set laststatus=2
 set linebreak
 set nocompatible
 set number
@@ -32,9 +33,12 @@ set ttimeoutlen=0
 set undodir=~/.vim/undodir
 set undofile
 set wildignore+=node_modules/*,bower_components/*
+set wildmenu
 set wrap
 
 highlight ColorColumn ctermbg=8
+highlight Comment ctermfg=33
+highlight Directory ctermfg=33
 highlight PmenuSel ctermbg=40
 highlight link CocMenuSel PmenuSel
 
