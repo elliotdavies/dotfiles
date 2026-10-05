@@ -6,6 +6,8 @@ autocmd BufRead *.svelte set syntax=html
 " Use new regex engine to avoid slow syntax highlighting
 set re=0
 
+autocmd FileType * setlocal formatoptions-=t " Don't wrap non-comment text
+
 set autoindent
 set autoread
 set backspace=indent,eol,start
@@ -15,6 +17,7 @@ set expandtab
 set hlsearch
 set ignorecase
 set incsearch
+set laststatus=2
 set linebreak
 set nocompatible
 set number
@@ -32,9 +35,12 @@ set ttimeoutlen=0
 set undodir=~/.vim/undodir
 set undofile
 set wildignore+=node_modules/*,bower_components/*
+set wildmenu
 set wrap
 
 highlight ColorColumn ctermbg=8
+highlight Comment ctermfg=33
+highlight Directory ctermfg=33
 highlight PmenuSel ctermbg=40
 highlight link CocMenuSel PmenuSel
 
@@ -82,6 +88,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'github/copilot.vim'
 Plug 'godlygeek/tabular'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
@@ -93,8 +100,13 @@ Plug 'tpope/vim-surround'
 
 " TS language server
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 let g:coc_global_extensions = [
-  \ 'coc-tsserver'
+  \ 'coc-tsserver',
+  \ 'coc-sourcekit'
   \ ]
+
+" Copilot settings
+let g:copilot_settings = #{selectedCompletionModel: 'gpt-4o-copilot'}
 
 call plug#end()
